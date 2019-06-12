@@ -1,0 +1,88 @@
+.movie-details-main-reviews-container {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+
+  text-align: justify;
+  border-radius: 5px;
+  &-author {
+    margin-bottom: 1rem;
+  }
+
+  &-link {
+    color: $tertiary-font-color;
+    text-decoration: none;
+
+    p {
+      margin-top: 2rem;
+      font-style: italic;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movie-details-main-reviews-container {
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    margin: 1rem 0;
+    text-align: justify;
+    border-radius: 5px;
+    &-author {
+      margin-bottom: 1rem;
+    }
+
+    &-link {
+      color: $tertiary-font-color;
+      text-decoration: none;
+
+      p {
+        margin-top: 2rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1170px) {
+  .movie-details-main-reviews-container {
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    margin: 1rem 2rem;
+    text-align: justify;
+    border-radius: 5px;
+    &-author {
+      margin-bottom: 1rem;
+    }
+
+    &-link {
+      color: $tertiary-font-color;
+      text-decoration: none;
+
+      p {
+        margin-top: 2rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1171px) {
+  .movie-details-main-reviews-container {
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    margin: 1rem 2rem 2rem 3rem;
+    text-align: justify;
+    border-radius: 5px;
+    &-author {
+      margin-bottom: 1rem;
+    }
+
+    &-link {
+      color: $tertiary-font-color;
+      text-decoration: none;
+
+      p {
+        margin-top: 2rem;
+        font-style: italic;
+      }
+    }
+  }
+}

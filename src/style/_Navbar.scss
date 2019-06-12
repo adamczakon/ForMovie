@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: $secondary-color;
+  color: $light-font-color;
+  position: fixed;
+  z-index: 100;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &-logo {
+      height: 50px;
+      width: auto;
+    }
+
+    &-title {
+      color: $secondary-font-color;
+      margin-left: 0.5rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-input {
+      padding: 10px;
+      width: 400px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+    }
+
+    &-link {
+      height: 37px;
+      width: auto;
+      position: relative;
+      right: 40px;
+      top: 5px;
+    }
+
+    &-button {
+      background: transparent;
+      color: $light-font-color;
+      border: none;
+      border-radius: 15px;
+      outline: none;
+      margin: auto;
+      cursor: pointer;
+
+      &-icon {
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &-menu {
+    &-button {
+      position: absolute;
+      right: 10px;
+      top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    &-header {
+      &-logo {
+        height: 50px;
+        margin-left: 10px;
+      }
+
+      &-title {
+        font-size: 0;
+      }
+    }
+
+    &-search {
+      &-input {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      &-link {
+        height: 0;
+        width: 0;
+      }
+
+      &-button {
+        cursor: pointer;
+        height: 37px;
+        width: 50px;
+        position: relative;
+        right: 8px;
+        bottom: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    justify-items: center;
+    align-items: center;
+  }
+}

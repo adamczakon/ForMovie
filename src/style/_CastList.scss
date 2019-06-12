@@ -1,0 +1,139 @@
+.cast {
+  &-link {
+    color: $primary-font-color;
+    text-decoration: none;
+    text-align: center;
+
+    &-person {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2.5rem;
+
+      &-name {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+      }
+
+      &-secondary {
+        font-style: italic;
+      }
+
+      &-character {
+        font-size: 1.1rem;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cast {
+    &-link {
+      text-align: center;
+      &-person {
+        &-image {
+          height: 190px;
+          width: 130px;
+          margin: auto;
+        }
+
+        &-name {
+          font-size: 0.9rem;
+        }
+
+        &-secondary {
+          font-size: 0.9rem;
+        }
+
+        &-character {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .cast {
+    &-link {
+      &-person {
+        &-image {
+          height: 190px;
+          width: 130px;
+          margin: auto;
+        }
+
+        &-name {
+          font-size: 0.9rem;
+        }
+
+        &-secondary {
+          font-size: 0.9rem;
+        }
+
+        &-character {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .cast {
+    &-link {
+      &-person {
+        &-image {
+          height: 190px;
+          width: 130px;
+          margin: auto;
+        }
+
+        &-name {
+          font-size: 0.9rem;
+        }
+
+        &-secondary {
+          font-size: 0.9rem;
+        }
+
+        &-character {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1171px) {
+  .cast {
+    &-link {
+      color: $primary-font-color;
+      text-decoration: none;
+
+      &-person {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2.5rem;
+
+        &-image {
+          height: 278px;
+          width: 185px;
+          margin: auto;
+        }
+
+        &-name {
+          margin-top: 1rem;
+          font-size: 1.1rem;
+        }
+
+        &-secondary {
+          font-style: italic;
+        }
+
+        &-character {
+          font-size: 1.1rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

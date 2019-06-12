@@ -1,0 +1,181 @@
+.movie-details {
+  &-banner {
+    background-size: cover !important;
+    width: 100%;
+    color: #fff;
+
+    &-header {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+
+      &-info {
+        margin-left: 1.5rem;
+
+        &-title {
+          padding-bottom: 0.5rem;
+        }
+
+        &-genre {
+          padding-bottom: 0.5rem;
+        }
+
+        &-production {
+          padding-bottom: 0.5rem;
+        }
+
+        &-score {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          &-icon {
+            height: 3rem !important;
+          }
+
+          &-numbers {
+            padding-left: 0.3rem;
+            text-align: left;
+            &-rating {
+              padding-top: 0.3rem;
+              padding-left: 0.5rem;
+            }
+
+            &-votes {
+              padding-top: 0.2rem;
+              padding-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    padding: 0 15%;
+
+    &-storyline {
+      text-align: justify;
+    }
+  }
+}
+
+.header {
+  margin: 1rem 0;
+  color: $tertiary-font-color;
+  text-transform: uppercase;
+}
+
+.box {
+  margin: 6rem 0;
+}
+
+//media
+@media screen and (max-width: 768px) {
+  .movie-details {
+    &-banner {
+      height: 60vh;
+
+      &-header {
+        position: relative;
+        left: 5%;
+        top: 40%;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+
+        &-image {
+          height: 120px;
+        }
+        &-info {
+          margin-left: 1rem;
+          width: 220px;
+
+          &-title {
+            font-size: 1rem;
+          }
+
+          &-genre {
+            font-size: 0.8rem;
+          }
+
+          &-production {
+            font-size: 0.8rem;
+          }
+
+          &-score {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &-icon {
+              height: 2.5rem !important;
+            }
+
+            &-numbers {
+              &-rating {
+                font-size: 0.9rem;
+              }
+
+              &-votes {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-main {
+      padding: 0 15%;
+
+      &-storyline {
+        text-align: justify;
+      }
+    }
+  }
+
+  .header {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: $tertiary-font-color;
+    text-transform: uppercase;
+  }
+
+  .box {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .movie-details {
+    &-banner {
+      height: 70vh;
+
+      &-header {
+        top: 50%;
+        left: 15%;
+        img {
+          height: 190px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1171px) {
+  .movie-details {
+    &-banner {
+      height: 70vh;
+
+      &-header {
+        top: 50%;
+        left: 15%;
+        img {
+          height: 190px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
