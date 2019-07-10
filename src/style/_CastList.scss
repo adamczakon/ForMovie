@@ -28,6 +28,7 @@
 
 @media screen and (max-width: 500px) {
   .cast {
+    padding: 0 10%;
     &-link {
       text-align: center;
       &-person {
@@ -55,11 +56,12 @@
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   .cast {
+    padding: 0 10%;
     &-link {
       &-person {
         &-image {
           height: 190px;
-          width: 130px;
+          width: 126px;
           margin: auto;
         }
 
@@ -83,8 +85,8 @@
     &-link {
       &-person {
         &-image {
-          height: 190px;
-          width: 130px;
+          height: 140px;
+          width: 93px;
           margin: auto;
         }
 
@@ -115,8 +117,8 @@
         margin: 0 2.5rem;
 
         &-image {
-          height: 278px;
-          width: 185px;
+          height: 290px;
+          width: 192px;
           margin: auto;
         }
 

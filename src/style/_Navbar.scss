@@ -5,7 +5,7 @@
 .navbar {
   height: 70px;
   width: 100%;
-  background: $secondary-color;
+  background: #151515;
   color: $light-font-color;
   position: fixed;
   z-index: 100;
@@ -25,7 +25,7 @@
     &-title {
       color: $secondary-font-color;
       margin-left: 0.5rem;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.3rem;
     }
   }
 
@@ -39,7 +39,7 @@
       width: 400px;
       border: none;
       outline: none;
-      border-radius: 10px;
+      border-radius: 2px;
     }
 
     &-link {

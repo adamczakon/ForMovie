@@ -41,17 +41,17 @@ export default class Movies extends Component {
     };
 
     return (
-      <div className="cast">
+      <div className='cast'>
         {this.props.people.length > 0 ? (
           <Slider {...sliderSettings}>
             {this.props.people.map((person, i) => {
               if (i < 20) {
                 return (
                   <div key={person.id}>
-                    <div className="cast-link">
-                      <div className="cast-link-person">
+                    <div className='cast-link'>
+                      <div className='cast-link-person'>
                         <img
-                          className="cast-link-person-image"
+                          className='cast-link-person-image'
                           src={
                             person.profile_path && config.images
                               ? `${
@@ -67,9 +67,9 @@ export default class Movies extends Component {
                           }
                           alt={person.name}
                         />
-                        <h3 className="cast-link-person-name">{person.name}</h3>
-                        <p className="cast-link-person-secondary">as</p>
-                        <h3 className="cast-link-person-character">
+                        <h3 className='cast-link-person-name'>{person.name}</h3>
+                        <p className='cast-link-person-secondary'>as</p>
+                        <h3 className='cast-link-person-character'>
                           {person.character}
                         </h3>
                       </div>

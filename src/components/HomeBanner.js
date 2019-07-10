@@ -7,7 +7,7 @@ class HomeBanner extends Component {
   render() {
     const config = this.props.config;
     const sliderSettings = {
-      dots: true,
+      dots: false,
       arrows: false,
       infinite: true,
       slidesToShow: 1,
@@ -17,8 +17,9 @@ class HomeBanner extends Component {
       speed: 2000,
       autoplaySpeed: 7000
     };
+    console.log(this.props.items);
     return (
-      <div className="slide-wrapper">
+      <div className='slide-wrapper'>
         <Slider {...sliderSettings}>
           {this.props.items.map((item, i) => {
             if (i < 5) {
@@ -26,12 +27,13 @@ class HomeBanner extends Component {
                 <Link to={`/movie-details/${item.id}`} key={item.id}>
                   <div
                     id={item.id}
-                    to="/"
-                    className="slide-background"
+                    to='/'
+                    className='slide-background'
                     style={{
                       background: `linear-gradient(
-                        rgba(0, 0, 0, 0.6),
-                        rgba(0, 0, 0, 0.6)
+                        rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 1)
                       ), url(${
                         config.images ? config.images.secure_base_url : ""
                       }${config.images ? config.images.backdrop_sizes[2] : ""}${
@@ -39,25 +41,25 @@ class HomeBanner extends Component {
                       })`
                     }}
                   >
-                    <div className="slide-description">
-                      <h2 className="slide-description-header">
+                    <div className='slide-description'>
+                      <h3 className='slide-description-header'>
                         Popular movies
-                      </h2>
-                      <h2 className="slide-description-title">{item.title}</h2>
+                      </h3>
+                      <h2 className='slide-description-title'>{item.title}</h2>
 
-                      <div className="slide-description-score">
+                      <div className='slide-description-score'>
                         <img
-                          className="slide-description-score-icon"
+                          className='slide-description-score-icon'
                           src={starIcon}
-                          alt="Rating:"
+                          alt='Rating:'
                         />
-                        <div className="slide-description-score-numbers">
-                          <h3 className="slide-description-score-number">
-                            {item.vote_average}/10
+                        <div className='slide-description-score-numbers'>
+                          <h3 className='slide-description-score-number'>
+                            {item.vote_average}
                           </h3>
-                          <h3 className="slide-description-score-votes">
-                            {item.vote_count} votes
-                          </h3>
+                          <h4 className='slide-description-score-votes'>
+                            {item.vote_count} VOTES
+                          </h4>
                         </div>
                       </div>
                     </div>

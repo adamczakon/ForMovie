@@ -17,6 +17,7 @@
 @media screen and (max-width: 500px) {
   .trailers {
     margin-top: 2rem;
+    padding: 0 10%;
 
     iframe {
       height: auto;
@@ -28,6 +29,7 @@
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   .trailers {
+    padding: 0 10%;
     iframe {
       height: 190px;
       width: 70%;
@@ -39,7 +41,7 @@
   .trailers {
     iframe {
       height: 190px;
-      width: 80%;
+      width: auto;
       padding-left: 10%;
     }
   }

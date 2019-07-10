@@ -1,13 +1,17 @@
 .movie-details {
   &-banner {
+    position: relative;
     background-size: cover !important;
     width: 100%;
     color: #fff;
+    height: 85vh;
 
     &-header {
       position: absolute;
       display: flex;
       flex-direction: row;
+      margin-left: 10rem;
+      bottom: 4rem;
 
       &-info {
         margin-left: 1.5rem;
@@ -77,9 +81,8 @@
       height: 60vh;
 
       &-header {
-        position: relative;
-        left: 5%;
-        top: 40%;
+        margin-left: 0.5rem;
+        bottom: 2rem;
         display: flex;
         flex-direction: row;
         width: 90%;
@@ -127,7 +130,7 @@
     }
 
     &-main {
-      padding: 0 15%;
+      padding: 0 5%;
 
       &-storyline {
         text-align: justify;
@@ -150,11 +153,11 @@
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .movie-details {
     &-banner {
-      height: 70vh;
+      height: 60vh;
 
       &-header {
-        top: 50%;
-        left: 15%;
+        bottom: 2rem;
+        margin-left: 1rem;
         img {
           height: 190px;
           width: auto;
@@ -166,11 +169,7 @@
 @media screen and (min-width: 1171px) {
   .movie-details {
     &-banner {
-      height: 70vh;
-
       &-header {
-        top: 50%;
-        left: 15%;
         img {
           height: 190px;
           width: auto;

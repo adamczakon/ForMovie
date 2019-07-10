@@ -35,10 +35,10 @@ export default class Movies extends Component {
     };
 
     return (
-      <div className="carousel">
-        <div className="carousel-heading">
-          <h2 className="carousel-heading-title">{this.props.header}</h2>
-          <span className="carousel-heading-line" />
+      <div className='carousel'>
+        <div className='carousel-heading'>
+          <h2 className='carousel-heading-title'>{this.props.header}</h2>
+          <div className='carousel-heading-line' />
         </div>
 
         <Slider {...sliderSettings}>
@@ -47,13 +47,13 @@ export default class Movies extends Component {
               return (
                 <Link
                   to={`/movie-details/${item.id}`}
-                  className="link"
+                  className='link'
                   key={item.id}
                 >
-                  <div className="carousel-item">
+                  <div className='carousel-item'>
                     <img
-                      to="/"
-                      className="carousel-poster"
+                      to='/'
+                      className='carousel-poster'
                       src={`${
                         config.images ? config.images.secure_base_url : ""
                       }${config.images ? config.images.poster_sizes[1] : ""}${

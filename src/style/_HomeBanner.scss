@@ -17,9 +17,8 @@
 
     &-header {
       color: $tertiary-font-color;
-      border-left: 4px solid $tertiary-font-color;
-      padding-left: 0.5rem;
       line-height: 1.5rem;
+      text-transform: uppercase;
     }
 
     &-title {
@@ -43,7 +42,7 @@
       }
 
       &-votes {
-        padding-top: 0.1rem;
+        padding-top: 0.5rem;
         padding-left: 0.5rem;
       }
     }

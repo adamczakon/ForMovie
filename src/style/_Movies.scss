@@ -2,29 +2,25 @@
   margin: 10rem 15%;
 
   &-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 95%;
 
     &-title {
-      flex-grow: 70%;
+      letter-spacing: 0.15rem;
       text-transform: uppercase;
-      padding: 1rem;
-      text-align: center;
+      padding-left: 1rem;
     }
 
     &-line {
-      height: 2px;
-      width: 90%;
+      margin: 10px auto;
+      height: 3px;
+      width: 100%;
       background: linear-gradient(
         to right,
-        rgba(255, 0, 0, 0),
-        rgba(255, 0, 0, 1),
-        rgba(255, 0, 0, 1),
-        rgba(255, 0, 0, 0)
+        rgba($primary-color, 1),
+        $primary-color,
+        $secondary-color,
+        rgba($secondary-color, 1)
       );
     }
   }
@@ -64,15 +60,16 @@
   color: transparent;
 
   &:before {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 0;
     color: $primary-color;
+
     opacity: 0.9;
   }
 }
 
 .slick-prev {
-  left: -80px;
+  left: -50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,8 +92,6 @@
 
   .slick-prev,
   .slick-next {
-    top: 80px;
-
     &:before {
       font-size: 2rem;
     }

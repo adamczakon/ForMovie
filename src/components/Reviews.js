@@ -13,19 +13,19 @@ export default class Reviews extends Component {
         {this.props.reviews.map(review => (
           <div
             key={review.url}
-            className="movie-details-main-reviews-container"
+            className='movie-details-main-reviews-container'
           >
-            <h3 className="movie-details-main-reviews-container-author">
+            <h3 className='movie-details-main-reviews-container-author'>
               {review.author}
             </h3>
-            <p className="movie-details-main-reviews-container-content">
+            <p className='movie-details-main-reviews-container-content'>
               {this.textCut(review.content)}
             </p>
             <a
-              className="movie-details-main-reviews-container-link"
+              className='movie-details-main-reviews-container-link'
               href={review.url}
-              rel="noopener noreferrer"
-              target="_blank"
+              rel='noopener noreferrer'
+              target='_blank'
             >
               <p>| Read full review |</p>
             </a>

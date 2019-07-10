@@ -45,16 +45,14 @@ class MovieDetails extends Component {
       return <Spinner />;
     } else {
       return (
-        <div className="movie-details">
+        <div className='movie-details'>
           <div
-            className="movie-details-banner"
+            className='movie-details-banner'
             style={{
               background: `linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.9),
-              rgba(0, 0, 0, 0.7),
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 1)
             ), url(${
               this.props.config.images
                 ? this.props.config.images.secure_base_url
@@ -67,9 +65,9 @@ class MovieDetails extends Component {
               backgroundSize: "cover, cover"
             }}
           >
-            <div className="movie-details-banner-header">
+            <div className='movie-details-banner-header'>
               <img
-                className="movie-details-banner-header-image"
+                className='movie-details-banner-header-image'
                 src={
                   this.props.config.images
                     ? this.props.config.images.secure_base_url +
@@ -85,11 +83,11 @@ class MovieDetails extends Component {
                   this.props.movieDetails ? this.props.movieDetails.title : ""
                 }
               />
-              <div className="movie-details-banner-header-info">
-                <h1 className="movie-details-banner-header-info-title">
+              <div className='movie-details-banner-header-info'>
+                <h1 className='movie-details-banner-header-info-title'>
                   {this.props.movieDetails ? this.props.movieDetails.title : ""}
                 </h1>
-                <h3 className="movie-details-banner-header-info-genre">
+                <h3 className='movie-details-banner-header-info-genre'>
                   {this.props.movieDetails.genres
                     ? `${
                         this.props.movieDetails.genres[0]
@@ -103,7 +101,7 @@ class MovieDetails extends Component {
                       }`
                     : ""}
                 </h3>
-                <h3 className="movie-details-banner-header-info-production">
+                <h3 className='movie-details-banner-header-info-production'>
                   {this.props.movieDetails.production_countries
                     ? `${
                         this.props.movieDetails.production_countries[0]
@@ -118,17 +116,17 @@ class MovieDetails extends Component {
                       }`
                     : ""}
                 </h3>
-                <div className="movie-details-banner-header-info-score">
+                <div className='movie-details-banner-header-info-score'>
                   <img
-                    className="movie-details-banner-header-info-score-icon"
+                    className='movie-details-banner-header-info-score-icon'
                     src={starIcon}
-                    alt="Rating:"
+                    alt='Rating:'
                   />
-                  <div className="movie-details-banner-header-info-score-numbers">
-                    <h3 className="movie-details-banner-header-info-score-numbers-rating">
+                  <div className='movie-details-banner-header-info-score-numbers'>
+                    <h3 className='movie-details-banner-header-info-score-numbers-rating'>
                       {this.props.movieDetails.vote_average}/10
                     </h3>
-                    <h3 className="movie-details-banner-header-info-score-numbers-votes">
+                    <h3 className='movie-details-banner-header-info-score-numbers-votes'>
                       {this.props.movieDetails.vote_count} votes
                     </h3>
                   </div>
@@ -136,12 +134,12 @@ class MovieDetails extends Component {
               </div>
             </div>
           </div>
-          <div className="movie-details-main">
-            <div className="movie-details-main-storyline box">
-              <h1 className="movie-details-main-storyline-title header">
+          <div className='movie-details-main'>
+            <div className='movie-details-main-storyline box'>
+              <h1 className='movie-details-main-storyline-title header'>
                 Storyline
               </h1>
-              <p className="movie-details-main-storyline-text">
+              <p className='movie-details-main-storyline-text'>
                 {this.props.movieDetails.overview
                   ? `${
                       this.props.movieDetails.overview.length > 0
@@ -151,21 +149,21 @@ class MovieDetails extends Component {
                   : ""}
               </p>
             </div>
-            <div className="movie-details-main-trailers box">
-              <h1 className="movie-details-main-trailers-header header">
+            <div className='movie-details-main-trailers box'>
+              <h1 className='movie-details-main-trailers-header header'>
                 Trailers
               </h1>
               {this.props.movieTrailers.results.length > 0 ? (
                 <TrailersList items={this.props.movieTrailers.results} />
               ) : (
-                <h3 className="item-details-main-trailers__error">
+                <h3 className='item-details-main-trailers__error'>
                   There are no trailers avaible
                 </h3>
               )}
             </div>
 
-            <div className="movie-details-main-cast box">
-              <h1 className="movie-details-main-cast-header header">
+            <div className='movie-details-main-cast box'>
+              <h1 className='movie-details-main-cast-header header'>
                 Starring
               </h1>
               {this.props.movieTrailers.results.length > 0 ? (
@@ -183,14 +181,14 @@ class MovieDetails extends Component {
                   config={this.props.config}
                 />
               ) : (
-                <h3 className="item-details-main-trailers-error">
+                <h3 className='item-details-main-trailers-error'>
                   There are no trailers avaible
                 </h3>
               )}
             </div>
 
-            <div className="movie-details-main-reviews box">
-              <h1 className="movie-details-main-cast-header header">Reviews</h1>
+            <div className='movie-details-main-reviews box'>
+              <h1 className='movie-details-main-cast-header header'>Reviews</h1>
               {this.props.movieReviews.results.length > 0 ? (
                 <Reviews
                   reviews={
@@ -200,7 +198,7 @@ class MovieDetails extends Component {
                   }
                 />
               ) : (
-                <h3 className="item-details-main-trailers__error">
+                <h3 className='item-details-main-trailers__error'>
                   There are no reviews for this movie.
                 </h3>
               )}
