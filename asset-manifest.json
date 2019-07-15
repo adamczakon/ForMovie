@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/formovie/static/css/main.4c98ac9c.chunk.css",
+    "main.js": "/formovie/static/js/main.9dea81d2.chunk.js",
+    "main.js.map": "/formovie/static/js/main.9dea81d2.chunk.js.map",
+    "runtime~main.js": "/formovie/static/js/runtime~main.5faf3035.js",
+    "runtime~main.js.map": "/formovie/static/js/runtime~main.5faf3035.js.map",
+    "static/css/2.b99a2d0c.chunk.css": "/formovie/static/css/2.b99a2d0c.chunk.css",
+    "static/js/2.97be7817.chunk.js": "/formovie/static/js/2.97be7817.chunk.js",
+    "static/js/2.97be7817.chunk.js.map": "/formovie/static/js/2.97be7817.chunk.js.map",
+    "index.html": "/formovie/index.html",
+    "precache-manifest.1d1ca2267fd3852e0fef660bf455a63b.js": "/formovie/precache-manifest.1d1ca2267fd3852e0fef660bf455a63b.js",
+    "service-worker.js": "/formovie/service-worker.js",
+    "static/css/2.b99a2d0c.chunk.css.map": "/formovie/static/css/2.b99a2d0c.chunk.css.map",
+    "static/css/main.4c98ac9c.chunk.css.map": "/formovie/static/css/main.4c98ac9c.chunk.css.map",
+    "static/media/TMDBLogo.svg": "/formovie/static/media/TMDBLogo.67317b5f.svg",
+    "static/media/avatar.png": "/formovie/static/media/avatar.0b0a90e9.png",
+    "static/media/circle.svg": "/formovie/static/media/circle.1842bfa7.svg",
+    "static/media/githubIcon.svg": "/formovie/static/media/githubIcon.22fdaa0b.svg",
+    "static/media/search.svg": "/formovie/static/media/search.8e4f0786.svg",
+    "static/media/slick-theme.css": "/formovie/static/media/slick.f97e3bbf.svg",
+    "static/media/starIcon.svg": "/formovie/static/media/starIcon.d5b5a740.svg"
+  }
+}
