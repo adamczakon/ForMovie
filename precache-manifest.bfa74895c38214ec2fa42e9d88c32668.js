@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "732c2c8f6c7595ff3b156ebb73f07a41",
+    "revision": "281b36a73595638bb51d393021af35f9",
     "url": "/formovie/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/formovie/static/css/2.b99a2d0c.chunk.css"
   },
   {
-    "revision": "9bb0f646325220cf2516",
+    "revision": "f7e1607ac9e611054965",
     "url": "/formovie/static/css/main.4c98ac9c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/formovie/static/js/2.97be7817.chunk.js"
   },
   {
-    "revision": "9bb0f646325220cf2516",
-    "url": "/formovie/static/js/main.c9694362.chunk.js"
+    "revision": "f7e1607ac9e611054965",
+    "url": "/formovie/static/js/main.e57ef85c.chunk.js"
   },
   {
     "revision": "b85c4087d1d9582028e8",
