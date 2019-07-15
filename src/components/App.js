@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import "slick-carousel/slick/slick.css";
@@ -23,16 +23,16 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
+      <HashRouter>
+        <div className='App'>
           <Navbar />
-          <div className="content">
-            <Route path="/" exact component={Home} />
-            <Route path="/movie-details/:id" exact component={MovieDetails} />
-            <Route path="/search/:id/" exact component={SearchResults} />
+          <div className='content'>
+            <Route path='/' exact component={Home} />
+            <Route path='/movie-details/:id' exact component={MovieDetails} />
+            <Route path='/search/:id/' exact component={SearchResults} />
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
