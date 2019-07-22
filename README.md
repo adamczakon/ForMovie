@@ -12,7 +12,7 @@ npm install npm@latest -g
  Clone the repository:
 
 ```sh
-$git clone https://github.com/adamczakon/ForMovie.git
+$git clone https://github.com/adamczakon/formovie.git
 ```
 Run npm install inside root directory and start the application
 
